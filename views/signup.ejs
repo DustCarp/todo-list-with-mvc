@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/b499387a50.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <header></header>
+    <main id="signupMain">
+        <h2>Sign Up</h2>
+        <span>Create an account using the below form.</span>
+        <% if (locals.messages.errors) { %>
+            <% messages.errors.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+            <% }) %>    
+        <% } %>
+        <form action="/signup" method="POST">
+            <ul id="signUpList">
+                <li><input type="text" name="userName" placeholder="User Name"></li>
+                <li><input type="email" name="email" placeholder="Email"></li>
+                <li><input type="password" name="password" placeholder="Password"></li>
+                <li><input type="password" name="confirmPassword" placeholder="Confirm Password"></li>
+                <li><input id="signUpSubmit" type="submit"></li>
+            </ul>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,211 @@
+
+/*==============================
+   HOME
+==============================*/ 
+
+#homeHeader{
+    height: 3em;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    display: flexbox;
+    color: white;
+}
+#homeHeader span{
+    font-size: 1em;
+    margin: 1em 0 0 30%;
+}
+#homeHeader span a{
+    color: white;
+    font-size: 1em;
+}
+#homeHeader span a:hover{
+    color: lightskyblue;
+    transition: 500ms;
+}
+#homeMain{
+        justify-content: center;
+        align-content: center;
+        border: 2px solid black;
+        height: 300px;
+        width: 50%;
+        margin: 12% 25%;
+        display: flexbox;
+        text-align: center;
+        flex-direction: column;
+        box-shadow: 0 6px 4px -1px black;
+        border-radius: 1em;
+}
+#homeMain li{
+    list-style: none;
+    padding: 1em 0;
+}
+#homeMain li button{
+    width: 20em;
+    height: 3em;
+    box-shadow: 0 6px 4px -1px black;
+    border-radius: 1em;
+}
+#homeMain li button:hover{
+    background-color: black;
+    transition: 500ms;
+}
+#homeMain li button a{
+    color: black;
+}
+#homeMain li button a:hover{
+    color: white;
+}
+
+
+
+/*==============================
+    SIGN UP PAGE
+==============================*/ 
+#signupMain{
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 50%;
+    margin: 12% 25%;
+    display: flexbox;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 6px 4px -1px black;
+    border-radius: 1em;
+}
+
+#signUpList{
+    list-style-type: none;
+    list-style: none;
+}
+#signUpList li{
+    margin: 1em 0;
+}
+#signUpList li input{
+    width: 20em;
+    margin: 0;
+}
+#signUpSubmit{
+    background-color: white;
+    width: 20em; 
+}
+#signUpSubmit:hover{
+    background-color: black;
+    color: white;
+    transition: 500ms;
+}
+
+
+
+/*==============================
+    LOGIN PAGE
+==============================*/ 
+#main-login{
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 50%;
+    margin: 12% 25%;
+    display: flexbox;
+    text-align: center;
+    box-shadow: 0 6px 4px -1px black;
+    border-radius: 1em;
+}
+#main-login h1{
+    color: black;
+}
+
+/*==============================
+    TODOS PAGE
+==============================*/ 
+#toDoBody{
+    display: flexbox;
+}
+header{
+    height: 3em;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+header h2{
+    margin-top: .5em;
+    margin-left: 2em;
+    padding-top: 0;
+    color: white;
+    width: 50%;
+}
+header #logout{
+    background-color: white;
+    color: black;
+    height: 2.5em;
+    margin: .25em;
+    margin-left: 40%;
+    width: 5em;
+    border-radius: .5em;
+}
+#logout a{
+    text-decoration-line: none;
+    color: black;
+
+}
+    #logout a:hover{
+        color: white;
+    }
+    #logout:hover{
+        transition: 500ms;
+        background-color: black;
+        color: white;
+    }
+
+#toDoMain{
+    text-align: center;
+    height:50em;
+    width: 60%;
+    margin: 2.5% 20%;
+    border: 2px solid black;
+    box-shadow: 0 6px 4px -1px black;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+}
+#toDoForm{
+    width: 20em;
+    box-shadow: 0 6px 4px -1px black;
+    border-radius: .5em;
+}
+#toDoSubmit{
+    box-shadow: 0 6px 4px -1px black;
+    border-radius: .5em;
+}
+    #toDoSubmit:hover{
+        color: white;
+        background-color: black;
+        transition: 500ms;
+    }
+
+#toDo-h1{
+    color: black;
+}
+#toDoList{
+    justify-content: center;
+    align-self: center;
+}
+.todoItem{
+    font-size: 1em;
+    list-style: none;
+    text-decoration-line: none;
+    text-align: left;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
+}

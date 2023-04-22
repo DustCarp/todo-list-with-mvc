@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/b499387a50.js" crossorigin="anonymous"></script>
+</head>
+<body id="toDoBody">
+    <header>
+        <h2>Welcome back, <%= user.userName %>!</h2>
+        <button id="logout" href="/logout"><a href="/logout">Logout</a></button>
+    </header>
+    <main id="toDoMain">
+        <h1 id="toDo-h1">Todos</h1>
+        <p>Add items using the form below. To cross an item off the list, click the item. To delete an item, click the trash can.</p>
+        
+        <form action="/todos/createTodo" method='POST'>
+            <input type="text" placeholder="Enter Todo Item" name='todoItem' id="toDoForm">
+            <input type="submit" id="toDoSubmit">
+        </form>
+    
+        <ul id="toDoList">
+        <% todos.forEach( el => { %>
+                <li class='todoItem' data-id='<%=el._id%>'>
+                    <span id="del" class="fa-sharp fa-solid fa-trash"></span>
+                    <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                </li>
+        <% }) %>    
+        </ul>
+    
+        <h2><%= user.userName %>'s remaining items: <%= left %></h2>
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
